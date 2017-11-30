@@ -1,0 +1,655 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+  h1 {
+
+      font-family: serif;
+      font-size: 50px;
+      text-align: center;
+        color: cornflowerblue;
+margin-right: 50px;
+  }
+
+  h2 {
+
+
+    font-family: "Roboto", sans-serif;
+    color: aqua;
+
+
+  }
+
+
+
+  #cssmenu {
+      top: 0;
+      display: block;
+      position: relative;
+    zoom: 1;
+    width: auto;
+    background-color: azure;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+  }
+  #cssmenu:before {
+    content: '';
+    display: block;
+  }
+  #cssmenu:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #cssmenu ul {
+      text-decoration: none;
+    list-style-type: none;
+    display: block;
+    font-size: 20px;
+    margin: 0;
+      width:460px;
+
+      margin-left: auto;
+      margin-right: auto;
+    padding: 1px;
+    border-bottom: 2px solid white;
+
+
+  }
+  #cssmenu ul:before {
+    content: '';
+    display: block;
+  }
+  #cssmenu ul:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #cssmenu li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #cssmenu li a {
+    float: left;
+    color: aquamarine;
+    text-decoration: none;
+    padding: 10px 15px 0;
+    font-weight: normal;
+  }
+  #cssmenu li:hover,
+  #cssmenu .active {
+    text-decoration: none;
+  }
+  #cssmenu li:hover a {
+    color: aqua;
+  }
+
+
+.Right {
+padding-top: 10px;
+font-size: 20px;
+
+}
+
+.RightBody {
+  padding-top: 30px;
+text-align: center;
+font-size: 20px;
+
+}
+
+
+.login-page {
+  width: 360px;
+  padding: 1% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: ;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #010000;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: aquamarine;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: lightgrey;
+  text-decoration: none;
+}
+.form .message a:hover{
+
+  color: black
+}
+
+
+
+
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+ background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.faq-section{
+    margin: 40px 0;
+        position: relative;
+}
+
+/*Hide the paragraphs*/
+.faq-section p{
+    display: none;
+}
+
+/*Hide the checkboxes */
+.faq-section input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    display: none\9; /* IE8 and below */
+    margin: 0;
+    width: 100%;
+    height: 36px;
+}
+
+/*Show only the clipped intro */
+.faq-section label+p{
+    display: block;
+    color: #999;
+    font-size: .85em;
+    transition: all .15s ease-out;
+    /* Clipping text */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*If the checkbox is checked, show all paragraphs*/
+.faq-section input[type=checkbox]:checked~p{
+    display: block;
+    color: #444;
+    font-size: 1em;
+    /* restore clipping defaults */
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+
+/*Style the label*/
+.faq-section label{
+    font-size: 1.2em;
+    background: #eee;
+    display: block;
+    position: relative;
+        height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-left: 3px solid #888;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out;
+}
+
+/*Remove text selection when toggle-ing*/
+.faq-section label::selection{
+    background: none;
+}
+
+.faq-section label:hover{
+    background: #f5f5f5;
+}
+
+/*If the checkbox is checked, style the label accordingly*/
+.faq-section input[type=checkbox]:checked~label{
+    border-color: #ff7f50;
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/*Label's arrow - default state */
+.faq-section label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+/*Update the right arrow*/
+.faq-section input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+
+
+.faq-section1 {
+    margin: 40px 0;
+        position: relative;
+}
+
+/*Hide the paragraphs*/
+.faq-section1 p{
+    display: none;
+}
+
+/*Hide the checkboxes */
+.faq-section1 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    display: none\9; /* IE8 and below */
+    margin: 0;
+    width: 100%;
+    height: 36px;
+}
+
+/*Show only the clipped intro */
+.faq-section1 label+p{
+    display: block;
+    color: #999;
+    font-size: .85em;
+    transition: all .15s ease-out;
+    /* Clipping text */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*If the checkbox is checked, show all paragraphs*/
+.faq-section1 input[type=checkbox]:checked~p{
+    display: block;
+    color: #444;
+    font-size: 1em;
+    /* restore clipping defaults */
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+
+/*Style the label*/
+.faq-section1 label{
+    font-size: 1.2em;
+    background: #eee;
+    display: block;
+    position: relative;
+        height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-left: 3px solid #888;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out;
+}
+
+/*Remove text selection when toggle-ing*/
+.faq-section1 label::selection{
+    background: none;
+}
+
+.faq-section1 label:hover{
+    background: #f5f5f5;
+}
+
+/*If the checkbox is checked, style the label accordingly*/
+.faq-section1 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/*Label's arrow - default state */
+.faq-section1 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+/*Update the right arrow*/
+.faq-section1 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+
+
+
+
+.faq-section2 {
+    margin: 40px 0;
+        position: relative;
+}
+
+/*Hide the paragraphs*/
+.faq-section2 p{
+    display: none;
+}
+
+/*Hide the checkboxes */
+.faq-section2 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    display: none\9; /* IE8 and below */
+    margin: 0;
+    width: 100%;
+    height: 36px;
+}
+
+/*Show only the clipped intro */
+.faq-section2 label+p{
+    display: block;
+    color: #999;
+    font-size: .85em;
+    transition: all .15s ease-out;
+    /* Clipping text */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*If the checkbox is checked, show all paragraphs*/
+.faq-section2 input[type=checkbox]:checked~p{
+    display: block;
+    color: #444;
+    font-size: 1em;
+    /* restore clipping defaults */
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+
+/*Style the label*/
+.faq-section2 label{
+    font-size: 1.2em;
+    background: #eee;
+    display: block;
+    position: relative;
+        height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-left: 3px solid #888;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out;
+}
+
+/*Remove text selection when toggle-ing*/
+.faq-section2 label::selection{
+    background: none;
+}
+
+.faq-section2 label:hover{
+    background: #f5f5f5;
+}
+
+/*If the checkbox is checked, style the label accordingly*/
+.faq-section2 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/*Label's arrow - default state */
+.faq-section2 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+/*Update the right arrow*/
+.faq-section2 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+
+
+
+
+.faq-section3 {
+    margin: 40px 0;
+        position: relative;
+}
+
+/*Hide the paragraphs*/
+.faq-section3 p{
+    display: none;
+}
+
+/*Hide the checkboxes */
+.faq-section3 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    display: none\9; /* IE8 and below */
+    margin: 0;
+    width: 100%;
+    height: 36px;
+}
+
+/*Show only the clipped intro */
+.faq-section3 label+p{
+    display: block;
+    color: #999;
+    font-size: .85em;
+    transition: all .15s ease-out;
+    /* Clipping text */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*If the checkbox is checked, show all paragraphs*/
+.faq-section3 input[type=checkbox]:checked~p{
+    display: block;
+    color: #444;
+    font-size: 1em;
+    /* restore clipping defaults */
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+
+/*Style the label*/
+.faq-section3 label{
+    font-size: 1.2em;
+    background: #eee;
+    display: block;
+    position: relative;
+        height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-left: 3px solid #888;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out;
+}
+
+/*Remove text selection when toggle-ing*/
+.faq-section3 label::selection{
+    background: none;
+}
+
+.faq-section3 label:hover{
+    background: #f5f5f5;
+}
+
+/*If the checkbox is checked, style the label accordingly*/
+.faq-section3 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/*Label's arrow - default state */
+.faq-section3 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+/*Update the right arrow*/
+.faq-section3 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+@media screen and (min-width: 700px) {
+
+
+    nav ul {
+        overflow: hidden;
+    }
+
+    nav>ul>li {
+        float: left;
+        border-right: 1px solid #999;
+        width: 20%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    nav>ul>li:last-child {
+        border: 0;
+    }
+
+    nav .knoppen {
+        padding-top: .4em;
+        padding-bottom: .2em;
+    }
+
+    .knoppen ul {
+        position: absolute;
+        background-color: #000;
+        width: 3px;
+        margin-left: -1em;
+        background-color: transparent;
+        margin-top: -.2em;
+    }
+
+    .knoppen ul li {
+        background-color: dodgerblue;
+    }
+}
+
+@media screen and (min-width:700px) {
+
+    nav>ul>li {
+        width: 23em;
+        padding: .3em 1.2em;
+        box-sizing: content-box;
+    }
+
+    nav>ul>li:last-child {
+        border-right: 1px solid #999;
+    }
+
+    .knoppen ul {
+        margin-left: -1.2em;
+    }
+
+    .knoppen ul li {
+        width: 13em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+}

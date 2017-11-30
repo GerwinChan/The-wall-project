@@ -1,0 +1,163 @@
+body {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: azure;
+}
+h1 {font-family: Broadway;
+font-size: 50px;
+text-align: center;
+  color: cornflowerblue;
+
+}
+
+
+h1:hover {
+ color: aquamarine;
+
+
+}
+
+
+.loginform ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 700px;
+}
+.loginform li {
+    display: inline;
+    float: left;
+}
+
+label {
+    display: block;
+    color: #999;
+}
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+:focus {
+    outline: 0;
+}
+
+
+
+#ewa{
+  font-family: Broadway;
+  font-size: 20px;
+
+}
+
+
+#button3 {
+    width: 60px;
+    height: 70px;
+    position: absolute;
+    top: left;
+    margin-top: 4px;
+
+}
+
+#hey:hover{
+
+ background-color: aqua;
+
+}
+
+label {
+
+ color: aqua;
+}
+
+
+input {
+    margin: 10px;
+
+
+    background-color: lightcyan;
+    border-radius: 10px;
+
+
+
+    width: 200px;
+    height: 30px;
+
+}
+
+
+#cssmenu {
+    top: 0;
+    display: block;
+    position: relative;
+  zoom: 1;
+  width: auto;
+  background-color: azure;
+  padding: 2px 0;
+}
+#cssmenu:before {
+  content: '';
+  display: block;
+}
+#cssmenu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu ul {
+    text-decoration: none;
+  list-style-type: none;
+  display: block;
+  font-size: px;
+  margin: 0;
+    width:660px;
+    margin-left: auto;
+    margin-right: auto;
+  padding: 1px;
+  border-bottom: 2px solid white;
+  zoom: 1;
+
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#cssmenu li a {
+  float: left;
+  color: aquamarine;
+  text-decoration: none;
+  padding: 10px 15px 0;
+  font-weight: normal;
+}
+#cssmenu li:hover,
+#cssmenu .active {
+  text-decoration: none;
+}
+#cssmenu li:hover a {
+  color: aqua;
+}
+#cssmenu .active a {
+
+  font-weight: 700;
+}

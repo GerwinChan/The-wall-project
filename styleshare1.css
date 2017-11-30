@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+ul li {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+
+}
+
+#ewa{
+      font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+body {
+
+background-color: aliceblue;
+
+}
+
+h1 {
+
+    font-family:serif;
+    font-size: 50px;
+    text-align: center;
+      color: cornflowerblue;
+      margin-right: 50px;
+
+}
+
+
+
+h2 {
+font-family: "Roboto", sans-serif;
+color: aqua;
+
+}
+
+
+nav ul li {
+
+    float: left;
+    padding: 0 2em;
+}
+#cssmenu {
+    top: 0;
+    display: block;
+    position: relative;
+  zoom: 1;
+  width: auto;
+  background-color: azure;
+  padding: 2px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+
+}
+#cssmenu:before {
+  content: '';
+  display: block;
+}
+#cssmenu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu ul {
+    text-decoration: none;
+  list-style-type: none;
+  display: block;
+  font-size: px;
+  margin: 0;
+    width:530px;
+    margin-left: auto;
+    margin-right: auto;
+  padding: 1px;
+  border-bottom: 2px solid white;
+  zoom: 1;
+
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#cssmenu li a {
+  float: left;
+  color: aquamarine;
+  text-decoration: none;
+  padding: 10px 15px 0;
+  font-weight: normal;
+}
+#cssmenu li:hover,
+#cssmenu .active {
+  text-decoration: none;
+}
+#cssmenu li:hover a {
+  color: aqua;
+}
+#cssmenu .active a {
+
+  font-weight: 700;
+}
+
+#button {
+ width: 100px;
+    height: 50px;
+
+
+}
+
+#share-buttons img {
+
+margin-left: 170px;
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    #cssmenu {
+
+    }
+
+    nav ul {
+        overflow: hidden;
+    }
+
+    nav>ul>li {
+        float: left;
+        border-right: 1px solid #999;
+        width: 20%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    nav>ul>li:last-child {
+        border: 0;
+    }
+
+    nav .knoppen {
+        padding-top: .4em;
+        padding-bottom: .2em;
+    }
+
+    .knoppen ul {
+        position: absolute;
+        background-color: #000;
+        width: 33vw;
+        margin-left: -1em;
+        background-color: transparent;
+        margin-top: -.2em;
+    }
+
+    .knoppen ul li {
+        background-color: dodgerblue;
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    nav>ul>li {
+        width: 13em;
+        padding: .3em 1.2em;
+        box-sizing: content-box;
+    }
+
+    nav>ul>li:last-child {
+        border-right: 1px solid #999;
+    }
+
+    .knoppen ul {
+        margin-left: -1.2em;
+    }
+
+    .knoppen ul li {
+        width: 13em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+}
